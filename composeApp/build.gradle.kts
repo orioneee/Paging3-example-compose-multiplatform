@@ -65,6 +65,15 @@ android {
     namespace = "com.oriooneee.paging"
     compileSdk = 35
 
+    buildTypes {
+        debug {
+            isDebuggable = false
+        }
+        release {
+
+        }
+    }
+
     defaultConfig {
         minSdk = 21
         targetSdk = 35

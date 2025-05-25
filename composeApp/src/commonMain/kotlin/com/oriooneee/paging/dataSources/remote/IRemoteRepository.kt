@@ -1,4 +1,4 @@
-package com.oriooneee.paging.remote
+package com.oriooneee.paging.dataSources.remote
 
 import com.oriooneee.paging.domain.RatingEntity
 

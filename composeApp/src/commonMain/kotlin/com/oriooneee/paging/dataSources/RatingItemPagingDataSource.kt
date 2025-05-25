@@ -1,10 +1,12 @@
-package com.oriooneee.paging.remote
+package com.oriooneee.paging.dataSources
 
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
+import com.oriooneee.paging.dataSources.remote.IRemoteRepository
+import com.oriooneee.paging.dataSources.remote.RemoteRepository
 import com.oriooneee.paging.domain.RatingEntity
 
-class PagingDataSource(
+class RatingItemPagingDataSource(
     private val remoteRepository: IRemoteRepository = RemoteRepository(),
     private val preloadedData: List<RatingEntity>,
 ) : PagingSource<Int, RatingEntity>() {
